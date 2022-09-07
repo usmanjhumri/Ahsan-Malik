@@ -13,7 +13,12 @@ function Players() {
        
       }}>
         <Container>
-            <Grid container>
+        
+            <Grid container sx={{
+
+            }}>
+                
+
                 <Grid item xs={12} md={6}>
                 <Box>
                     <Typography sx={{
@@ -143,16 +148,15 @@ function Players() {
 
                  <Grid item xs={12} md={6}>
                     <Box>
-                        <Typography>
+                        <Typography sx={{
+                            fontSize:"34px",
+                            fontWeight:900,
+                            textTransform:"uppercase",
+                            color:"#2F632C"
+                        }}>
                             total players
                         </Typography>
-                        <Box sx={{
-                            // justifyContent:"space-between",
-                            // position:"relative"
-
-
-                            // margin:{xs:"auto", md:"2.2rem 12rem"}
-}}>
+                        <Box>
                         <Typography sx={{
                             background:"rgba(255, 255, 255, 0.1)",
                             boxShadow:"0px 4px 4px rgba(18, 30, 16, 0.25)",
@@ -161,7 +165,7 @@ function Players() {
                             fontWeight:900,
                             fontSize:"48px",
                             width:"297px",
-                            margin:{xs:"auto", sm:"auto", md:"2.5rem 8rem"}
+                            margin:{xs:"auto", sm:"auto", md:"1rem 8rem"}
                         }}>
                             2,670,683
                         </Typography>
@@ -170,6 +174,7 @@ function Players() {
                        
                     
                  </Grid>
+                  
             </Grid>
         </Container>
       </Box>
