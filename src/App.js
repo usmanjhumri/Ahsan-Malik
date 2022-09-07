@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import Players from './components/Players/Players';
 import GamePlay from './components/GamePlay/GamePlay';
 import Gam from './components/GAM/Gam';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
      <Players/>
      <GamePlay/>
      <Gam/>
+    <Footer/>
+
+
 
     </div>
   );

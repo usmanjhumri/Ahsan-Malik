@@ -29,7 +29,7 @@ function Gam() {
             <Grid container>
                 <Grid item xs={12} md={12}>
                     <div className='inside-img' style={{
-                        position:"relative"
+                        // position:"relative"
                     }}>
                     <img src={VEC} alt=""/>
                         {/* <img src={IMG} alt=""  style={{
