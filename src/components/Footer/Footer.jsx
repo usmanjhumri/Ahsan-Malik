@@ -31,13 +31,18 @@ export default function Footer() {
   };
   const ListContainer = {};
   return (
+
+    <>
+
     <Box sx={{
                 background:`linear-gradient( rgba(0.9, 0.6, 0.5, 0.8), rgba(0.9, 0.6, 0.5, 0.8) ),url(${ONE})`,
                 backgroundRepeat:"no-repeat",
                 backgroundSize:"cover"
 
     }}>
-    <Grid container>
+    <Grid container sx={{
+      paddingBottom:"9rem"
+    }}>
       <Grid item xs={6} md={6} sx={imgstyleobj}>
         <img src={LEFT} alt="img" />
       </Grid>
@@ -89,5 +94,22 @@ export default function Footer() {
       </Grid>
     </Grid>
     </Box>
+
+    <Box sx={{
+      background:"#0E0C16",
+      margin:"auto",
+      padding:"2rem"
+    }}>
+        <Typography sx={{
+          fontWeight:400,
+          fontSize:"20px",
+          color:"#FFFFFF",
+          textAlign:"center",
+        }}>
+        Copyright © 2021 webname Limited
+        </Typography>
+    </Box>
+    </>
+    
   );
 }
